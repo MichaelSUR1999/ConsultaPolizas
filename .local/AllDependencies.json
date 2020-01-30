@@ -130,6 +130,15 @@
           "lib/Interop.Domino.dll": {}
         }
       },
+      "iTextSharp/5.5.13": {
+        "type": "package",
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {}
+        }
+      },
       "Microsoft.AspNet.SignalR.Client/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -206,6 +215,18 @@
           "lib/net45/NPOI.OpenXml4Net.dll": {},
           "lib/net45/NPOI.OpenXmlFormats.dll": {},
           "lib/net45/NPOI.dll": {}
+        }
+      },
+      "PDF_Activities/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "iTextSharp": "5.5.13"
+        },
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/pdfLibrary.dll": {}
         }
       },
       "SharpZipLib/1.0.0": {
@@ -1108,6 +1129,21 @@
         "lib/Interop.Domino.dll"
       ]
     },
+    "iTextSharp/5.5.13": {
+      "sha512": "MigtmZrqjrJ4QERhgNZc+zhl+XSNV5y3JoH5nNxzdNjPvZJgzYN2qLRQhqtWsF9F/1H28SnOkoS6uIlSduSrXQ==",
+      "type": "package",
+      "path": "itextsharp/5.5.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AGPL.txt",
+        "itextsharp.5.5.13.nupkg.sha512",
+        "itextsharp.nuspec",
+        "lib/iTextSharp.xml",
+        "lib/itextsharp.dll",
+        "notice.txt"
+      ]
+    },
     "Microsoft.AspNet.SignalR.Client/2.4.0": {
       "sha512": "xGoQq9dEsBU49U1Whl0To2JyRQePmo8ayYS8VNruLlQaX+fQBzYyLJeMlW9r7mlt8Vc9JP+083m9pKrfYpdDbg==",
       "type": "package",
@@ -1249,6 +1285,17 @@
         "logo/60_60.jpg",
         "npoi.2.4.1.nupkg.sha512",
         "npoi.nuspec"
+      ]
+    },
+    "PDF_Activities/1.0.2": {
+      "sha512": "U6wapoIcnq/MK7Jct0l+Fy/WWDsiqTdbYOcce41q73c/3UoFTQFsqA+Fnm0evuEGd0QEd5GMMYuW6H3qIzganQ==",
+      "type": "package",
+      "path": "pdf_activities/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        "lib/pdfLibrary.dll",
+        "pdf_activities.1.0.2.nupkg.sha512",
+        "pdf_activities.nuspec"
       ]
     },
     "SharpZipLib/1.0.0": {
@@ -1787,6 +1834,7 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
+      "PDF_Activities >= 1.0.2 <= 1.0.2",
       "UiPath.Excel.Activities >= 2.7.2 <= 2.7.2",
       "UiPath.Mail.Activities >= 1.7.2 <= 1.7.2",
       "UiPath.PDF.Activities >= 3.2.0-preview <= 3.2.0-preview",
@@ -1808,6 +1856,11 @@
     "frameworks": {
       "net461": {
         "dependencies": {
+          "PDF_Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.2, 1.0.2]"
+          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
@@ -1836,14 +1889,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'BitMiracle.Docotic.Pdf 5.10.9957' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "BitMiracle.Docotic.Pdf"
-    }
-  ]
+  }
 }

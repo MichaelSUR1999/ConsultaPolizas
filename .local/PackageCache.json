@@ -40,6 +40,20 @@
     },
     {
       "Package": {
+        "Id": "UiPath.PDF.Activities",
+        "Version": "3.2.0-preview"
+      },
+      "Assemblies": [
+        "C:\\Users\\msurrego\\.nuget\\packages\\bitmiracle.docotic.pdf/5.10.9957\\lib/net40/BitMiracle.Docotic.Pdf.dll",
+        "C:\\Users\\msurrego\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\msurrego\\.nuget\\packages\\uipath.ocr.contracts/2.2.1\\lib/net45/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\msurrego\\.nuget\\packages\\uipath.pdf.activities/3.2.0-preview\\lib/net461/UiPath.PDF.Activities.Design.dll",
+        "C:\\Users\\msurrego\\.nuget\\packages\\uipath.pdf.activities/3.2.0-preview\\lib/net461/UiPath.PDF.Activities.dll",
+        "C:\\Users\\msurrego\\.nuget\\packages\\uipath.pdf.activities/3.2.0-preview\\lib/net461/UiPath.PDF.dll"
+      ]
+    },
+    {
+      "Package": {
         "Id": "UiPath.System.Activities",
         "Version": "19.10.1"
       },
@@ -107,16 +121,12 @@
     },
     {
       "Package": {
-        "Id": "UiPath.PDF.Activities",
-        "Version": "3.2.0-preview"
+        "Id": "PDF_Activities",
+        "Version": "1.0.2"
       },
       "Assemblies": [
-        "C:\\Users\\msurrego\\.nuget\\packages\\bitmiracle.docotic.pdf/5.10.9957\\lib/net40/BitMiracle.Docotic.Pdf.dll",
-        "C:\\Users\\msurrego\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\msurrego\\.nuget\\packages\\uipath.ocr.contracts/2.2.1\\lib/net45/UiPath.OCR.Contracts.dll",
-        "C:\\Users\\msurrego\\.nuget\\packages\\uipath.pdf.activities/3.2.0-preview\\lib/net461/UiPath.PDF.Activities.Design.dll",
-        "C:\\Users\\msurrego\\.nuget\\packages\\uipath.pdf.activities/3.2.0-preview\\lib/net461/UiPath.PDF.Activities.dll",
-        "C:\\Users\\msurrego\\.nuget\\packages\\uipath.pdf.activities/3.2.0-preview\\lib/net461/UiPath.PDF.dll"
+        "C:\\Users\\msurrego\\.nuget\\packages\\itextsharp/5.5.13\\lib/itextsharp.dll",
+        "C:\\Users\\msurrego\\.nuget\\packages\\pdf_activities/1.0.2\\lib/pdfLibrary.dll"
       ]
     }
   ],
@@ -172,6 +182,11 @@
       "Version": "1.0.0",
       "Dependencies": []
     },
+    "iTextSharp": {
+      "Id": "iTextSharp",
+      "Version": "5.5.13",
+      "Dependencies": []
+    },
     "Microsoft.AspNet.SignalR.Client": {
       "Id": "Microsoft.AspNet.SignalR.Client",
       "Version": "2.4.0",
@@ -214,6 +229,16 @@
         {
           "Item1": "SharpZipLib",
           "Item2": "[1.0.0, )"
+        }
+      ]
+    },
+    "PDF_Activities": {
+      "Id": "PDF_Activities",
+      "Version": "1.0.2",
+      "Dependencies": [
+        {
+          "Item1": "iTextSharp",
+          "Item2": "[5.5.13, )"
         }
       ]
     },

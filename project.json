@@ -3,6 +3,7 @@
   "description": "Proceso transaccional",
   "main": "Main.xaml",
   "dependencies": {
+    "PDF_Activities": "[1.0.2]",
     "UiPath.Excel.Activities": "[2.7.2]",
     "UiPath.Mail.Activities": "[1.7.2]",
     "UiPath.PDF.Activities": "[3.2.0-preview]",
