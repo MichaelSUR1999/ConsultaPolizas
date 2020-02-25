@@ -61,9 +61,9 @@
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Default="AVANCE CARTERA MPP Y H&amp;C AXA COLPATRIA CIERRE" Name="Asunto" />
       <Variable x:TypeArguments="ui:GenericValue" Default="[DateTime.Now.ToString(&quot;MMMM&quot;, new System.Globalization.CultureInfo(&quot;es-ES&quot;)).ToUpper]" Name="MesAnterior" />
-      <Variable x:TypeArguments="x:String" Default="51742839" Name="Usuario" />
+      <Variable x:TypeArguments="x:String" Default="" Name="Usuario" />
       <Variable x:TypeArguments="snm:MailMessage" Name="Mensaje" />
-      <Variable x:TypeArguments="x:String" Default="Digital29022" Name="Pass" />
+      <Variable x:TypeArguments="x:String" Default="" Name="Pass" />
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.ToString(&quot;yyyy&quot;)]" Name="AñoActual" />
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.ToString(&quot;yyyy&quot;)]" Name="AñoIngresoFecha" />
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.ToString(&quot;MMMM&quot;, new System.Globalization.CultureInfo(&quot;es-ES&quot;)).ToUpper]" Name="MesIngresoFecha" />
